@@ -18,12 +18,12 @@
   --lig: 75%;
   --second-hue: 219;
 
-  --first-color: #720B0C;
-  --first-color-alt: #720B0C;
+  --first-color: #720b0c;
+  --first-color-alt: #720b0c;
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --body-color: black;
-  --container-color: #282F39;
+  --container-color: #282f39;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -82,7 +82,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: 0.4s;
+  transition: 300ms ease-in;
 }
 
 h1,
@@ -112,12 +112,11 @@ img {
   height: auto;
 }
 
-
 /*=============== THEME ===============*/
 .change-theme {
   font-size: 1.25rem;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .change-theme:hover {
@@ -125,25 +124,27 @@ img {
 }
 
 /*========== CUTTER ==========*/
-.cutter-text{
+.cutter-text {
   margin-top: 1rem;
 }
 
-
-.cutter-2{
+.cutter-2 {
   margin-top: 4rem;
 }
 
-.cutter{
+.cutter {
   margin-top: 10rem;
 }
 
-.cutter-big{
+.cutter-big {
   margin-top: 14rem;
 }
 
-
 /*=============== REUSABLE CSS CLASSES ===============*/
+
+.red {
+  color: var(--first-color);
+}
 
 .grid {
   display: grid;
@@ -175,8 +176,6 @@ img {
   color: var(--text-color-light);
 }
 
-
-
 /*=============== HEADER & NAV===============*/
 .header {
   position: fixed;
@@ -185,7 +184,7 @@ img {
   width: 100%;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
-  transition: 0.4s;
+  transition: 3s;
 }
 
 .nav {
@@ -193,14 +192,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .nav__logo {
   color: var(--first-color);
   font-weight: var(--font-medium);
-  transition: .4s;
-
+  transition: 0.4s;
 }
 
 .nav__logo:hover {
@@ -210,7 +207,7 @@ img {
 .nav__menu {
   position: fixed;
   bottom: 1rem;
-  background-color: #282F39;
+  background-color: #282f39;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
@@ -223,27 +220,26 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .nav__link {
   color: var(--text-color);
   font-size: 1.25rem;
-  padding: .4rem;
+  padding: 0.4rem;
   display: flex;
   border-radius: 5rem;
 }
 /* Active link */
 .active-link {
   background: linear-gradient(180deg);
-  box-shadow: 0 0 16px #720B0C;, .4);
-  color: #720B0C;
+  box-shadow: 0 0 16px #720b0c;
+  color: #720b0c;
 }
 
 /* Change background header */
 
 .scroll-header {
-  box-shadow: 0 4px 4px hsla(0, 0, 4%, .3);
+  box-shadow: 0 4px 4px hsla(0, 0, 4%, 0.3);
 }
 
 /*=============== HOME ===============*/
@@ -266,7 +262,13 @@ img {
 .home__greeting {
   display: block;
   color: var(--title-color);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
+}
+
+.home__education_2 {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
 }
 
 .home__education {
@@ -286,7 +288,7 @@ img {
   justify-self: center;
   width: 190px;
   height: 293px;
-  );
+
   border-radius: 10rem 10rem 1rem 1rem;
   display: flex;
   align-items: flex-end;
@@ -299,7 +301,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-
 }
 
 .home__social,
@@ -311,15 +312,15 @@ img {
   bottom: 5rem;
   left: 0;
   display: grid;
-  row-gap: .5rem;
+  row-gap: 0.5rem;
 }
 
 .home__social-link {
   width: max-content;
   background-color: var(--container-color);
   color: var(--first-color);
-  padding: .25rem;
-  border-radius: .25rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
   display: flex;
   font-size: 1rem;
 }
@@ -327,11 +328,10 @@ img {
 .home__social-link:hover {
   background-color: var(--first-color);
   color: #fff;
-
 }
 
 .home__social:after {
-  content: '';
+  content: "";
   width: 32px;
   height: 2px;
   background-color: var(--first-color);
@@ -343,14 +343,12 @@ img {
   right: -1.5rem;
   bottom: 4rem;
   display: grid;
-  row-gap:2.25rem;
+  row-gap: 2.25rem;
   justify-items: center;
-
 }
 
 .home__scroll-icon {
   font-size: 1.25rem;
-
 }
 
 .home__scroll-name {
@@ -358,16 +356,15 @@ img {
   transform: rotate(-90deg);
 }
 
-
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--body-color);
-  padding: .75rem 1rem;
-  border-radius: .5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
   font-weight: var(--font-medium);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .button:hover {
@@ -378,7 +375,7 @@ img {
 .button--ghost {
   background-color: transparent;
   border: 2px solid var(--first-color);
-  color: var(--first-color) ;
+  color: var(--first-color);
 }
 /*=============== ABOUT ===============*/
 .about__container {
@@ -395,108 +392,50 @@ img {
   text-align: center;
 }
 
-.down-text{
- margin-left: auto;
+.down-text {
+  margin-left: auto;
 }
 
 .about__title {
   font-size: var(--small-font-size);
 }
 
-/*=============== SKILLS ===============*/
-.skills__container {
-  row-gap: 2rem;
-  padding-top: 1rem;
-
-}
-
-.skills__content {
-  background-color: var(--container-color);
-  padding: 1.5rem;
-  border-radius: 1.25rem;
-
-}
-
-.skills__title {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  color: var(--first-color);
-  text-align: center;
-  margin-bottom: 1.5rem;
-
-}
-
-.skills__box {
-  display: flex;
-  justify-content: space-evenly;
-  column-gap: 2.5rem;
-}
-
-.skills__group {
-  display: grid;
-  align-content: flex-start;
-  row-gap: 1rem;
-}
-
-.skills__data {
-  display: flex;
-  column-gap: .5rem;
-}
-
-.skills .bxs-badge-check {
-  font-size: 1rem;
-  color: var(--first-color);
-}
-
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  line-height: 18px;
-}
-
-.skills__level {
-  font-size: var(--tiny-font-size);
-}
-
 /*=============== PROJEKTE ===============*/
 .projekte__container {
   padding-top: 1rem;
-
 }
 
 .projekte__filters {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
   margin-bottom: 2rem;
 }
 
 .projekte__item {
   cursor: pointer;
   color: var(--title-color);
-  padding: .25rem .75rem;
+  padding: 0.25rem 0.75rem;
   font-weight: var(--font-medium);
-  border-radius: .5rem;
-
+  border-radius: 0.5rem;
 }
 
 .projekte__card {
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
-
 }
 
 .projekte__img {
   border-radius: 1rem;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .projekte__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .projekte__button {
@@ -505,16 +444,16 @@ img {
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
-  column-gap: .25rem;
+  column-gap: 0.25rem;
 }
 
 .projekte__button:hover .projekte__icon {
-  transform: translateX(.25rem);
+  transform: translateX(0.25rem);
 }
 
 .projekte__icon {
   font-size: 1rem;
-  transition: .4s;
+  transition: 0.4s;
 }
 /* Active item projekte*/
 .active-projekte {
@@ -522,11 +461,8 @@ img {
   color: var(--body-color);
 }
 
-/*=============== PROJEKTE Dialog ===============*/
-
-
 /*=============== FOOTER ===============*/
-.footer{
+.footer {
   background-color: var(--first-color);
 }
 
@@ -542,7 +478,6 @@ img {
 .footer__title {
   text-align: center;
   margin-bottom: 2rem;
-
 }
 
 .footer__list {
@@ -561,30 +496,30 @@ img {
 .footer__social-link {
   background-color: var(--body-color);
   color: var(--first-color);
-  padding: .25rem;
-  border-radius: .25rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
   font-size: 1rem;
   display: inline-flex;
 }
 
 .footer__copy {
   display: block;
-  margin-top: 4.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   color: var(--container-color);
   text-align: center;
   font-size: var(--smaller-font-size);
 }
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: .6rem;
-  border-radius: .5rem;
+  width: 0.6rem;
+  border-radius: 0.5rem;
   background-color: hsl(var(--second-hue), 8%, 38%);
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: hsl(var(--second-hue), 8%, 26%);
-  border-radius: .5rem;
-
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -594,8 +529,8 @@ img {
 /* For small devices */
 @media screen and (max-width: 377px) {
   .container {
-    margin-left: .8rem;
-    margin-right: .8rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
 
   .home__container {
@@ -631,7 +566,7 @@ img {
     font-size: var(--small-font-size);
   }
 
-  .services__container{
+  .services__container {
     grid-template-columns: 145px;
     justify-content: center;
   }
@@ -640,15 +575,15 @@ img {
     font-size: var(--small-font-size);
   }
 
-  .projekte__filters{
-    column-gap: .25rem;
+  .projekte__filters {
+    column-gap: 0.25rem;
   }
 }
 
 @media screen and (max-width: 415px) {
   .container {
-    margin-left: .8rem;
-    margin-right: .8rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
 
   .home__container {
@@ -684,7 +619,7 @@ img {
     font-size: var(--small-font-size);
   }
 
-  .services__container{
+  .services__container {
     grid-template-columns: 145px;
     justify-content: center;
   }
@@ -693,8 +628,8 @@ img {
     font-size: var(--small-font-size);
   }
 
-  .projekte__filters{
-    column-gap: .25rem;
+  .projekte__filters {
+    column-gap: 0.25rem;
   }
 }
 /* ==========  For medium devices  ========== */
@@ -735,7 +670,6 @@ img {
 
   .services__modal-description {
     padding: 0 3.5rem;
-
   }
 
   .projekte__container {
@@ -759,16 +693,16 @@ img {
 
 @media screen and (min-width: 767px) {
   .projekte__container {
-  grid-template-columns: repeat(2, max-content);
-}
+    grid-template-columns: repeat(2, max-content);
+  }
 
-.contact__container {
-  grid-template-columns: repeat(2, max-content);
-}
+  .contact__container {
+    grid-template-columns: repeat(2, max-content);
+  }
 }
 
 /* ==========  For large devices ==========  */
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   .container {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -793,16 +727,16 @@ img {
 
   .home__img {
     width: 220px;
-    padding: .4rem;
+    padding: 0.4rem;
   }
 
   .home__social-link {
-    padding: .4rem;
+    padding: 0.4rem;
     font-size: 1.25rem;
   }
 
   .home__social::after {
-    transform: rotate(90deg) translate(16px,0);
+    transform: rotate(90deg) translate(16px, 0);
   }
 
   .home__scroll-icon {
@@ -845,7 +779,5 @@ img {
 
   .skills__content {
     width: 800px;
-
   }
-
 }
