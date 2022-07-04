@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-  <link rel="icon" type="image/x-icon" href="public/images/favicon2.ico">
+    <link rel="icon" type="image/x-icon" href="public/images/favicon2.ico" />
 
     <!--=============== BOXICONS ===============-->
     <link
@@ -15,243 +15,282 @@
 
     <!--=============== FONTAWSOME ===============-->
 
-    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="public/css/dialog.css">
+    <link rel="stylesheet" href="public/css/dialog.css" />
     <link rel="stylesheet" href="public/css/styles.css" />
-
-
 
     <title>TolkinLoL</title>
   </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">TolkinLoL</a>
-        <img src="public/images/6.png" width="30" height="30" class="img-top" alt="">
-
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home-alt"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="bx bx-user"></i>
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#projekte" class="nav__link">
-                <i class="bx bx-book"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-  <!--=============== MAIN ===============-->
-  <main class="main">
-    <!--=============== HOME ===============-->
-    <section class="home section" id="home">
-      <div class="home__container container grid">
-        <div class="home__data">
-          <h1 class="home__name">Niklot "Tolkin" Stüber</h1>
-          <h3 class="home__education">Retired professioneller League of Legends Spieler und Twitch Streamer</h3>
-
-        </div>
-        <div class="home__handle">
-          <img src="public/images/2.png" alt="" class="home-img" />
-        </div>
-        <div class="home__social">
-          <a
-            href="https://www.youtube.com/c/TolkinLoL"
-            target="_blank"
-            class="home__social-link"
-          >
-            <i class="bx bxl-youtube"></i>
-          </a>
-          <a
-            href="https://www.twitch.tv/tolkinlol"
-            target="_blank"
-            class="home__social-link"
-          >
-            <i class="bx bxl-twitch"></i>
-          </a>
-          <a
-            href="https://twitter.com/TolkinLoL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-            target="_blank"
-            class="home__social-link"
-          >
-            <i class="bx bxl-twitter"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/tolkinlol/?hl=de"
-            target="_blank"
-            class="home__social-link"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-        </div>
-        <a href="#about" class="home__scroll">
-          <i class="bx bx-mouse-alt home__scroll-icon"></i>
-          <span class="home__scroll-name">Scroll Down</span>
-        </a>
-      </div>
-    </section>
-
-    <!--=============== ABOUT ===============-->
-    <section class="about section cutter" id="about">
-      <h2 class="section__title">Wer ist Tolkin?</h2>
-
-      <div class=" cutter about__container container grid">
-        <img src="public/images/10.jpg" alt="" class="about__img" />
-        <div class="about__data">
-          <p class="">Retired professioneller League of Legends Spieler, zuletzt für mousesports.</p>
-          <p>Viermaliger deutscher Meister mit SPG, ESG & mousesports.</p>
-          <p>Challenger seit season 5</p>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="about__container cutter grid">
-        <div class="about__data down-text">
-          <p class="">Retired professioneller League of Legends Spieler, zuletzt für mousesports.</p>
-          <p>Viermaliger deutscher Meister mit SPG, ESG & mousesports.</p>
-          <p>Challenger seit season 5</p>
-          <p></p>
-        </div>
-        <img src="public/images/1.png" alt="" class="about__img" />
-      </div>
-    </section>
-
-    <!--=============== PROJECTS ===============-->
-    <section class="projekte section" id="projekte">
-      <h2 class="section__title">Projekte</h2>
-
-      <div class="projekte__filters">
-        <span class="projekte__item active-projekte" data-filter="all">Alle</span>
-        <span class="projekte__item" data-filter=".abgeschlossene">Abgeschlossene</span>
-        <span class="projekte__item" data-filter=".aktive">Aktive</span>
-      </div>
-      <div class="projekte__container container grid">
-
-        <div class="projekte__card abgeschlossene">
-          <img src="public/images/13.webp" alt="" class="projekte__img" />
-
-          <h3 class="projekte__title">Korea</h3>
-
-          <a href="#projekte" onclick="dialogOeffnen('Korea-dialog')" class="projekte__button">
-            Mehr Anzeigen <i class="bx bx-right-arrow-alt projekte__icon"></i>
-          </a>
-        </div>
-
-        <div class="projekte__card aktive">
-          <img src="public/images/11.png" alt="" class="projekte__img" />
-
-          <h3 class="projekte__title">NNO</h3>
-
-          <a href="#projekte" onclick="dialogOeffnen('NNO-dialog')" class="projekte__button">
-            Mehr Anzeigen <i class="bx bx-right-arrow-alt projekte__icon"></i>
-          </a>
-        </div>
-
-        <div class="projekte__card aktive">
-          <img src="public/images/16.png" alt="" class="projekte__img" />
-
-          <h3 class="projekte__title">A-Z</h3>
-
-          <a href="#projekte" onclick="dialogOeffnen('A-Z-dialog')" class="projekte__button">
-            Mehr Anzeigen <i class="bx bx-right-arrow-alt projekte__icon"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!--=============== PROJECTS Dialog===============-->
-    <div id="body-overlay"></div>
-    <div class="dialog" id="Korea-dialog">
-        <a href="#projekte" role="button" class="dialog-schliessen-button" onclick="dialogSchliessen('Korea-dialog')">
-             <i class="fas fa-times"></i>
-        </a>
-        <h3>Korea</h3>
-        <p class="cutter-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsa ad doloribus perferendis debitis dignissimos facilis beatae architecto aspernatur quae tempora repellat nihil fugiat quod!</p>
-    </div>
-    <div class="dialog" id="NNO-dialog">
-        <a href="#projekte" role="button" class="dialog-schliessen-button" onclick="dialogSchliessen('NNO-dialog')">
-            <i class="fas fa-times"></i>
-        </a>
-        <h3>NNO</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsa ad doloribus perferendis debitis dignissimos facilis beatae architecto aspernatur quae tempora repellat nihil fugiat quod!</p>
-
-    </div>
-    <div class="dialog" id="A-Z-dialog">
-        <a href="#projekte" role="button" class="dialog-schliessen-button" onclick="dialogSchliessen('A-Z-dialog')">
-            <i class="fas fa-times"></i>
-        </a>
-        <h3>A-Z</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsa ad doloribus perferendis debitis dignissimos facilis beatae architecto aspernatur quae tempora repellat nihil fugiat quod!</p>
-    </div>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer cutter-big">
-      <div class="footer__container container">
-        <h1 class="footer__title">Tolkin</h1>
-
-        <ul class="footer__social">
-          <a
-            href="https://www.youtube.com/c/TolkinLoL"
-            target="_blank"
-            class="home__social-link"
-          >
-            <i class="bx bxl-youtube"></i>
-          </a>
-          <a
-            href="https://www.twitch.tv/tolkinlol"
-            target="_blank"
-            class="home__social-link"
-          >
-            <i class="bx bxl-twitch"></i>
-          </a>
-          <a
-            href="https://twitter.com/TolkinLoL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-            target="_blank"
-            class="home__social-link"
-          >
-            <i class="bx bxl-twitter"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/tolkinlol/?hl=de"
-            target="_blank"
-            class="home__social-link"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-        </ul>
-
-        <span class="footer__copy">
-         Elias Kayatz
-        </span>
-      </div>
-    </footer>
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="public/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="public/js/mixitup.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="public/js/index.js"></script>
-  </body>
+  <body></body>
 </html>
-<!--=============== Elias Kayatz ===============-->
+<!--=============== HEADER ===============-->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">TolkinLoL</a>
+    <img src="public/images/6.png" width="30" height="30" class="img-top" alt="" />
+
+    <div class="nav__menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#home" class="nav__link active-link">
+            <i class="bx bx-home-alt"></i>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#about" class="nav__link">
+            <i class="bx bx-user"></i>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#projekte" class="nav__link">
+            <i class="bx bx-book"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!--=============== HOME ===============-->
+<section class="home section" id="home">
+  <div class="home__container container grid">
+    <div class="home__data">
+      <h1 class="home__name">Niklot "Tolkin" Stüber</h1>
+      <h3 class="home__education">
+        Retired professioneller League of Legends Spieler und Twitch Streamer
+      </h3>
+    </div>
+    <div class="home__handle">
+      <img src="public/images/2.png" alt="" class="home-img" />
+    </div>
+    <div class="home__social">
+      <a href="https://www.youtube.com/c/TolkinLoL" class="home__social-link">
+        <i class="bx bxl-youtube"></i>
+      </a>
+      <a
+        href="https://www.twitch.tv/tolkinlol"
+        target="_blank"
+        class="home__social-link"
+      >
+        <i class="bx bxl-twitch"></i>
+      </a>
+      <a
+        href="https://twitter.com/TolkinLoL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        target="_blank"
+        class="home__social-link"
+      >
+        <i class="bx bxl-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/tolkinlol/?hl=de"
+        target="_blank"
+        class="home__social-link"
+      >
+        <i class="bx bxl-instagram"></i>
+      </a>
+    </div>
+    <a href="#about" class="home__scroll">
+      <i class="bx bx-mouse-alt home__scroll-icon"></i>
+      <span class="home__scroll-name">Scroll Down</span>
+    </a>
+  </div>
+</section>
+<!--=============== ABOUT ===============-->
+<section class="about section cutter" id="about">
+  <h2 class="section__title">Wer ist Tolkin?</h2>
+
+  <div class="cutter about__container container grid">
+    <img src="public/images/10.jpg" alt="" class="about__img" />
+    <div class="about__data">
+      <p class="">
+        Retired professioneller League of Legends Spieler, zuletzt für
+        mousesports.
+      </p>
+      <p>Viermaliger deutscher Meister mit SPG, ESG & mousesports.</p>
+      <p>Challenger seit season 5</p>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="about__container cutter grid">
+    <div class="about__data down-text">
+      <p class="">
+        Retired professioneller League of Legends Spieler, zuletzt für
+        mousesports.
+      </p>
+      <p>Viermaliger deutscher Meister mit SPG, ESG & mousesports.</p>
+      <p>Challenger seit season 5</p>
+      <p></p>
+    </div>
+    <img src="public/images/1.png" alt="" class="about__img" />
+  </div>
+</section>
+<!--=============== PROJECTS ===============-->
+<section class="projekte section" id="projekte">
+  <h2 class="section__title">Projekte</h2>
+
+  <div class="projekte__filters">
+    <span class="projekte__item active-projekte" data-filter="all">Alle</span>
+    <span class="projekte__item" data-filter=".abgeschlossene"
+      >Abgeschlossene</span
+    >
+    <span class="projekte__item" data-filter=".aktive">Aktive</span>
+  </div>
+  <div class="projekte__container container grid">
+    <div class="projekte__card abgeschlossene">
+      <img src="public/images/13.webp" alt="" class="projekte__img" />
+
+      <h3 class="projekte__title">Korea</h3>
+
+      <a
+        href="#projekte"
+        onclick="dialogOeffnen('Korea-dialog')"
+        class="projekte__button"
+      >
+        Mehr Anzeigen <i class="bx bx-right-arrow-alt projekte__icon"></i>
+      </a>
+    </div>
+
+    <div class="projekte__card aktive">
+      <img src="public/images/11.png" alt="" class="projekte__img" />
+
+      <h3 class="projekte__title">NNO</h3>
+
+      <a
+        href="#projekte"
+        onclick="dialogOeffnen('NNO-dialog')"
+        class="projekte__button"
+      >
+        Mehr Anzeigen <i class="bx bx-right-arrow-alt projekte__icon"></i>
+      </a>
+    </div>
+
+    <div class="projekte__card aktive">
+      <img src="public/images/16.png" alt="" class="projekte__img" />
+
+      <h3 class="projekte__title">A-Z</h3>
+
+      <a
+        href="#projekte"
+        onclick="dialogOeffnen('A-Z-dialog')"
+        class="projekte__button"
+      >
+        Mehr Anzeigen <i class="bx bx-right-arrow-alt projekte__icon"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<!--=============== PROJECTS Dialog===============-->
+<div id="body-overlay"></div>
+<div class="dialog" id="Korea-dialog">
+  <a
+    href="#projekte"
+    role="button"
+    class="dialog-schliessen-button"
+    onclick="dialogSchliessen('Korea-dialog')"
+  >
+    <i class="fas fa-times"></i>
+  </a>
+  <h3>Korea</h3>
+  <p class="cutter-text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsa ad
+    doloribus perferendis debitis dignissimos facilis beatae architecto
+    aspernatur quae tempora repellat nihil fugiat quod!
+  </p>
+  <br />
+</div>
+<div class="dialog" id="NNO-dialog">
+  <a
+    href="#projekte"
+    role="button"
+    class="dialog-schliessen-button"
+    onclick="dialogSchliessen('NNO-dialog')"
+  >
+    <i class="fas fa-times"></i>
+  </a>
+  <h3>NNO</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsa ad
+    doloribus perferendis debitis dignissimos facilis beatae architecto
+    aspernatur quae tempora repellat nihil fugiat quod!
+  </p>
+  <br />
+  <a class="red" href="https://www.primeleague.gg/teams/29951-noneedorga"
+    >PrimeLeague Übersicht</a
+  >
+</div>
+<div class="dialog" id="A-Z-dialog">
+  <a
+    href="#projekte"
+    role="button"
+    class="dialog-schliessen-button"
+    onclick="dialogSchliessen('A-Z-dialog')"
+  >
+    <i class="fas fa-times"></i>
+  </a>
+  <h3>A-Z</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsa ad
+    doloribus perferendis debitis dignissimos facilis beatae architecto
+    aspernatur quae tempora repellat nihil fugiat quod!
+  </p>
+  <br />
+  <a class="red" href="/A-Z">Übersicht A-Z</a>
+</div>
+<!--=============== FOOTER ===============-->
+<footer class="footer cutter-big">
+  <div class="footer__container container">
+    <h1 class="footer__title">Tolkin</h1>
+
+    <ul class="footer__social">
+      <a
+        href="https://www.youtube.com/c/TolkinLoL"
+        target="_blank"
+        class="home__social-link"
+      >
+        <i class="bx bxl-youtube"></i>
+      </a>
+      <a
+        href="https://www.twitch.tv/tolkinlol"
+        target="_blank"
+        class="home__social-link"
+      >
+        <i class="bx bxl-twitch"></i>
+      </a>
+      <a
+        href="https://twitter.com/TolkinLoL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        target="_blank"
+        class="home__social-link"
+      >
+        <i class="bx bxl-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/tolkinlol/?hl=de"
+        target="_blank"
+        class="home__social-link"
+      >
+        <i class="bx bxl-instagram"></i>
+      </a>
+    </ul>
+
+    <span class="footer__copy">
+      Elias Kayatz
+    </span>
+  </div>
+</footer>
+<!--=============== SCROLLREVEAL ===============-->
+<script src="public/js/champs.js"></script>
+
+<!--=============== MIXITUP FILTER ===============-->
+<script src="public/js/mixitup.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="public/js/index.js"></script>
+</body>
+</html>
