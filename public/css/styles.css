@@ -341,7 +341,7 @@ img {
 .home__scroll {
   color: var(--first-color);
   right: -1.5rem;
-  bottom: 4rem;
+  bottom: 6rem;
   display: grid;
   row-gap: 2.25rem;
   justify-items: center;
@@ -504,8 +504,7 @@ img {
 
 .footer__copy {
   display: block;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 4.5rem;
   color: var(--container-color);
   text-align: center;
   font-size: var(--smaller-font-size);
@@ -606,7 +605,9 @@ img {
   .home__img {
     width: 130px;
   }
-
+  .home__scroll {
+    right: 0;
+  }
   .about__info {
     grid-template-columns: repeat(2, 1fr);
   }
